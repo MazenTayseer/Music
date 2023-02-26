@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="App_Plugins">
+      <UniqueIdentifier>{4fce7bce-a177-4292-aab5-d618211f5e66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Dashboard">
+      <UniqueIdentifier>{09b718e4-e75b-4be2-9f36-3250c6feeaf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sign up">
+      <UniqueIdentifier>{e0f657a3-d183-461c-be5e-47658219407b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Dashboard\Account">
+      <UniqueIdentifier>{d077d199-d50d-4456-8a70-abc70b978469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Dashboard\Explore">
+      <UniqueIdentifier>{2a42a983-b557-4c46-bde1-858aedec68ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Dashboard\All Songs">
+      <UniqueIdentifier>{787685df-9630-48a4-987f-dbe31f8024be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Double Linked List">
+      <UniqueIdentifier>{2d0bcd3e-d977-46c1-848a-5d0f94cd5174}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Dashboard\Current Song">
+      <UniqueIdentifier>{707ba701-8f55-4cf2-8f4f-7a9438aa67a7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Login.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dashboard.cpp">
+      <Filter>Source Files\Dashboard</Filter>
+    </ClCompile>
+    <ClCompile Include="signUp.cpp">
+      <Filter>Source Files\Sign up</Filter>
+    </ClCompile>
+    <ClCompile Include="Account.cpp">
+      <Filter>Source Files\Dashboard\Account</Filter>
+    </ClCompile>
+    <ClCompile Include="Explore.cpp">
+      <Filter>Source Files\Dashboard\Explore</Filter>
+    </ClCompile>
+    <ClCompile Include="AllSongs.cpp">
+      <Filter>Source Files\Dashboard\All Songs</Filter>
+    </ClCompile>
+    <ClCompile Include="DoubleLinked.cpp">
+      <Filter>Resource Files\Double Linked List</Filter>
+    </ClCompile>
+    <ClCompile Include="CurrentSong.cpp">
+      <Filter>Source Files\Dashboard\Current Song</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Login.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dashboard.h">
+      <Filter>Source Files\Dashboard</Filter>
+    </ClInclude>
+    <ClInclude Include="signUp.h">
+      <Filter>Source Files\Sign up</Filter>
+    </ClInclude>
+    <ClInclude Include="Account.h">
+      <Filter>Source Files\Dashboard\Account</Filter>
+    </ClInclude>
+    <ClInclude Include="Explore.h">
+      <Filter>Source Files\Dashboard\Explore</Filter>
+    </ClInclude>
+    <ClInclude Include="AllSongs.h">
+      <Filter>Source Files\Dashboard\All Songs</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleLinked.h">
+      <Filter>Resource Files\Double Linked List</Filter>
+    </ClInclude>
+    <ClInclude Include="CurrentSong.h">
+      <Filter>Source Files\Dashboard\Current Song</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
