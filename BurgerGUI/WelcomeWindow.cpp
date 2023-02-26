@@ -1,4 +1,4 @@
-/*#include "Login.h"
+#include "Login.h"
 #include "WelcomeWindow.h"
 
 using namespace System;
@@ -9,5 +9,5 @@ void main(array<String^>^ args) {
 	Application::SetCompatibleTextRenderingDefault(false);
 	BugerGUI::WelcomeWindow form;
 	Application::Run(% form);
-}*/
+}
 
