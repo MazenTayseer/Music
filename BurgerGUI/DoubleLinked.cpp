@@ -146,6 +146,9 @@ void Doublelinked::erase(int index) {
         delete ptr;
         first->previous = 0;
     }
+    else if (index == 0 && mySize == 1) {
+        first = 0;
+    }
     else {
         for (int i = 0; i < index; i++) {
             ptr = ptr->next;
@@ -155,7 +158,42 @@ void Doublelinked::erase(int index) {
         ptrprev = ptr->previous;
 
         if (index == mySize - 1) {
+            ptrprev->next = 0;
+        }
+        else {
             ptrprev->next = ptrnext;
+            ptrnext->previous = ptrprev;
+        }
+
+        mySize--;
+        delete ptr;
+    }
+}
+
+
+void Doublelinked::eraseName(string name) {
+    Doublelinked::NodePointer ptr = first, ptrnext, ptrprev;
+
+    if (search(name) == 0 && mySize == 1) {
+         first = 0;
+    }
+    else if (search(name) == 0) {
+        ptr = first;
+        first = ptr->next;
+        delete ptr;
+        first->previous = 0;
+    }
+   
+    else {
+        for (int i = 0; i < search(name); i++) {
+            ptr = ptr->next;
+        }
+
+        ptrnext = ptr->next;
+        ptrprev = ptr->previous;
+
+        if (search(name) == mySize - 1) {
+            ptrprev->next = 0;
         }
         else {
             ptrprev->next = ptrnext;
@@ -273,6 +311,27 @@ void Doublelinked::display(ostream& out) const
 
 void Doublelinked::playSong(string name) {
     string s = "play ./Songs/" + name + ".mp3";
+    wstring stemp = wstring(s.begin(), s.end());
+    LPCWSTR sw = stemp.c_str();
+    mciSendString(sw, NULL, 0, NULL);
+}
+
+void Doublelinked::pauseSong(string name) {
+    string s = "pause ./Songs/" + name + ".mp3";
+    wstring stemp = wstring(s.begin(), s.end());
+    LPCWSTR sw = stemp.c_str();
+    mciSendString(sw, NULL, 0, NULL);
+}
+
+void Doublelinked::stopSong(string name) {
+    string s = "stop ./Songs/" + name + ".mp3";
+    wstring stemp = wstring(s.begin(), s.end());
+    LPCWSTR sw = stemp.c_str();
+    mciSendString(sw, NULL, 0, NULL);
+}
+
+void Doublelinked::resumeSong(string name) {
+    string s = "resume ./Songs/" + name + ".mp3";
     wstring stemp = wstring(s.begin(), s.end());
     LPCWSTR sw = stemp.c_str();
     mciSendString(sw, NULL, 0, NULL);

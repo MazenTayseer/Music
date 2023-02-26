@@ -51,7 +51,7 @@ namespace BugerGUI {
 	private: System::Windows::Forms::Panel^ panel1;
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: System::Windows::Forms::Panel^ panel2;
-
+    
 
 
 
@@ -444,5 +444,5 @@ namespace BugerGUI {
 				"Register Failure", MessageBoxButtons::OK);
 		}
 	}
-	};
+};
 }

@@ -1,5 +1,5 @@
-/*#include "Dashboard.h"
-#include "Login.h"
+/*#include "Login.h"
+#include "WelcomeWindow.h"
 
 using namespace System;
 using namespace System::Windows::Forms;
@@ -7,8 +7,7 @@ using namespace System::Windows::Forms;
 void main(array<String^>^ args) {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
-	BugerGUI::Dashboard form;
+	BugerGUI::WelcomeWindow form;
 	Application::Run(% form);
 }*/
-
 

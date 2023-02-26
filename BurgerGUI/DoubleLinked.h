@@ -119,6 +119,14 @@ public:
 
     void playSong(string name);
 
+    void pauseSong(string name);
+    
+    void stopSong(string name);
+
+    void resumeSong(string name);
+
+    void eraseName(string name);
+
 private:
     //------ DATA MEMBERS
     NodePointer first;
@@ -128,4 +136,4 @@ private:
 ostream& operator<<(ostream& out, const Doublelinked& aList);
 istream& operator>>(istream& in, Doublelinked& aList);
 
-#endif /* Doublelinked_h */
+#endif /* Doublelinked_h */#pragma once
